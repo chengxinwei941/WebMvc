@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "Show";
+}
+<style>
+    li {
+        cursor: pointer;
+    }
+        li:visited {
+            background-color: red;
+        }
+</style>
+<h1>Show</h1>
+<ul>
+    <li>231</li>
+    <li>231</li>
+    <li>231</li>
+    <li>231</li>
+    <li>231</li>
+</ul>
+<script>
+    $("li").click(function () {
+        $("li").css("background-color", "");
+        $(this).css("background-color", "red");
+    })
+    $.ajax({
+        url: "",
+        data: { token: localStorage["User"] },
+        success: function (msg) {
+      
+        }
+    })
+</script>
+ 

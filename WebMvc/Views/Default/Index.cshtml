@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<script>
+    $.ajax({
+        url: "",
+        data: {},
+        success: function (msg) {
+            if (msg!=null) {
+                sessionStorage["User"] = msg;
+            }
+            localStorage["User"] = msg;
+          
+
+        }
+    })
+</script>
